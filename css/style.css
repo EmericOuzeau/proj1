@@ -1,0 +1,169 @@
+:root {
+    --font-primary: Work Sans;
+    --font-secondary: Arial;
+    --color-header : #414865;
+    --color-text-block : white;
+    --color-titre : black;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    display: flexbox;
+    background-color: var(--color-header);
+    border-bottom-left-radius: 2em;
+    padding: 1.2em;
+}
+
+#btnhead {
+    display: flex;
+    right: 0px;
+}
+
+#logohead {
+    width: 1.8em;
+}
+
+.entete{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.seeall{
+    display: block;
+}
+
+a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+
+h1, header h2, h3, h4 {
+    color: var(--color-text-block);
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.slide-head{
+    display: flex;
+    gap: 1em;
+}
+
+section{
+    width: 100vw;
+    height: 20em;
+    margin: 1em;
+    overflow: hidden;
+}
+
+.container-slide-head{
+    padding: 1em;
+    width: 30em;
+    height: 11em;
+    background-color: red;
+    border-radius: 0.5em 2em 0.5em 2em;
+}
+
+
+.btnslider-head{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.slide-main {
+    left: 0px;
+    display: flex;
+    gap: 1em;
+}
+
+.container-slide-main{
+    width: 10em;
+    height: 11em;
+    border-radius: 0.5em 2em 0.5em 2em;
+    background-color: orange;
+}
+
+
+/*recherche*/
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+#btnclose{
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    padding-top: 0.8em;
+}
+
+.bar{
+    width: 90%;
+    height: 10%;
+    background-color: white;
+}
+
+.bar1{
+    transform:  rotate(45deg);
+}
+
+.bar2{
+    transform: translateY(-100%) rotate(-45deg);
+}
+
+#bg-option{
+    width: 100;
+    background-color: var(--color-header);
+}
+
+#contain-btn-option{
+    display: flex;
+}
+
+.btn-option{
+    margin: 1em;
+}
+
+
+input[type="checkbox"].check-option {
+    display: none;
+  }
+  
+  input[type="checkbox"].check-option + label {
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2em;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em;
+    margin-top: 3em;
+  }
+  
+  input[type="checkbox"].check-option:hover + label {
+    background-color: #178e1f;
+    color: white;
+  }
+  
+  input[type="checkbox"].check-option:checked + label {
+    background-color: white;
+    color: black;
+  }
+
+
