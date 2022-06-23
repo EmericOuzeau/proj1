@@ -1,23 +1,61 @@
 :root {
-    --font-primary: Work Sans;
+    --font-primary: 'Work Sans';
     --font-secondary: Arial;
     --color-header : #414865;
     --color-text-block : white;
     --color-titre : black;
+    --bg-color1: #F87659;
+    --bg-color2: #7371CA;
+    --bg-color3: #71CA9F;
+    --bg-color4: #F8AE59;
+    --bg-color5: #71BFCA;
+    --bg-color6: #AD71CA;
+    --bg-color7: #5AA6FF;
 
+}
+
+
+.bgcolor1{
+    background-color: var(--bg-color1);
+}
+
+.bgcolor2{
+    background-color: var(--bg-color2);
+}
+
+.bgcolor3{
+    background-color: var(--bg-color3);
+}
+
+.bgcolor4{
+    background-color: var(--bg-color4);
+}
+
+.bgcolor5{
+    background-color: var(--bg-color5);
+}
+
+.bgcolor6{
+    background-color: var(--bg-color6);
+}
+
+.bgcolor7{
+    background-color: var(--bg-color7);
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10em;
 }
 
 header{
     display: flexbox;
     background-color: var(--color-header);
     border-bottom-left-radius: 2em;
-    padding: 1.2em;
+    padding-bottom: 1.2em;
+    padding-top: 3em;
 }
 
 #btnhead {
@@ -30,6 +68,8 @@ header{
 }
 
 .entete{
+    margin: auto;
+    width: 90%;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -50,6 +90,7 @@ h1, header h2, h3, h4 {
 }
 
 .line {
+    margin: 0em 1em 0em 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,42 +102,117 @@ h1, header h2, h3, h4 {
     gap: 1em;
 }
 
-section{
-    width: 100vw;
-    height: 20em;
-    margin: 1em;
-    overflow: hidden;
-}
-
 .container-slide-head{
+    position: relative;
     padding: 1em;
-    width: 30em;
-    height: 11em;
-    background-color: red;
+    width: 18em;
+    height: 10em;
     border-radius: 0.5em 2em 0.5em 2em;
 }
 
+.container-slide-head img{
+    position: absolute;
+    right: -0.8em;
+    top: -0.8em;
+}
+
+.container-slide-head a{
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 0.4em 1.2em 0.4em 1.2em;
+    border-radius: 1em;
+    font-size: 0.9em;
+}
+
+.container-slide-head a{
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 0.4em 1.2em 0.4em 1.2em;
+    border-radius: 1em;
+    font-size: 0.9em;
+}
+
+h3{
+    font-size: 1.8em;
+    width: 50%;
+    margin-bottom: 0em;
+}
+
+.container-slide-head p{
+    margin-top: 0.4em;
+    font-size: 0.9em;
+    color: white;
+    opacity: 70%;
+}
+
+.text-headslide{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0.6em;
+}
 
 .btnslider-head{
-    background-color: rgba(255, 255, 255, 0.5);
     color: white;
 }
 
-.slide-main {
-    left: 0px;
+.slide {
+    width: 100vw;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.zone-slide{
+    margin: 0em 1em 0em 1em;
     display: flex;
     gap: 1em;
 }
 
 .container-slide-main{
-    width: 10em;
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    padding: 1em;
+    padding-bottom: 0em;
+    width: 8em;
     height: 11em;
     border-radius: 0.5em 2em 0.5em 2em;
-    background-color: orange;
 }
 
+.container-slide-main > img{
+    position: absolute;
+    right: -0.8em;
+    top: 0em;
+}
 
-/*recherche*/
+h4{
+    font-size: 1.2em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 2em 2em 0em 0em;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+    padding-bottom: 2em;
+}
+
+#mainbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-header);
+    border-radius: 3em;
+    color: white;
+    width: 30%;
+    padding: 1em;
+}
+
+/*recherche
 
 main{
     width: 90%;
@@ -167,3 +283,4 @@ input[type="checkbox"].check-option {
   }
 
 
+*/
